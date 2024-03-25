@@ -36,5 +36,8 @@ module App
 
     config.time_zone = "Tokyo"
     config.i18n.default_locale = :ja
+    
+    # アセットのプリコンパイルにapplication.jsを含める
+    config.assets.precompile += %w( application.js )
   end
 end
